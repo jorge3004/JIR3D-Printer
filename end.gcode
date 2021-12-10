@@ -1,11 +1,12 @@
 ; END
-G91 ;Relative positioning
-G1 E-2 F2700 ;Retract a bit
-G1 E-2 Z1 F4800 ;Retract and raise Z
-G1 X5 Y5 F6000 ;Wipe out
-G1 Z10 ;Raise Z more
-G1 E-10 F2700 ;Retract a bit
-G90 ;Absolute positioning
+G92 E0
+G1 E-5 F1500 ;Retract a bit
+G90
+G1 X10 Y10 F5000.0 ; Move to start position
+G1 Z5 F3000 ;Retract and raise Z
+G91
+G92 E0
+G1 E-10 F1500 ;Retract a bit
 
 
 G1 X0 Y{machine_depth}  F5000 ;Present print
@@ -15,9 +16,11 @@ M140 S0 ;Turn-off bed
 
 M84 X Y E ;Disable all steppers but Z
 
-G91 ;Relative positioning
-G1 E-415 F1850 ;Cambio de filamento?
-G90 ;Absolute positioning
+; CAMBIO FILAMENTO?
+; G92 E0
+; G1 E-415 F1850 ;Cambio de filamento?
+; CAMBIO FILAMENTO?
+
 
 M300 S660 S1
 
