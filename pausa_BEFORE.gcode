@@ -1,1 +1,18 @@
  
+; PAUSA_BEFORE
+
+G92 E0
+G1 E-5 F1500
+
+G91
+G1 X15 Z5 F5200.0 ; Move to start position
+G90
+
+G92 E0 
+G1 E-10 F1500
+G92 E0
+G1 E-415 F1850 ;Retract a bit
+M300 S660 S1
+
+; PAUSA_BEFORE
+
