@@ -2,6 +2,7 @@
 M104 S{material_print_temperature_layer_0} ; Set Extruder temperature
 M140 S{material_bed_temperature_layer_0} ; Set Heat Bed temperature
 G28
+G90
 M190 S{material_bed_temperature_layer_0} ; Wait for Heat Bed temperature
 M109 S{material_print_temperature_layer_0} ; Wait for Extruder temperature
 

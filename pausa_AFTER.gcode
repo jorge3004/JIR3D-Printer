@@ -23,7 +23,10 @@ G1 X190 Y190 Z0.3 F5000.0 ; Move to start position
 G1 X10 Y190 Z0.3 F1500.0 E15 ; Draw the first line
 G1 X10 Y190.3 Z0.3 F5000.0 ; Move to side a little
 G1 X195 Y190.3 Z0.3 F1500.0 E30 ; Draw the second line
-G4 S5
+G4 S4
+G1 E25 ; Draw the second line
+G90
+; G4 S5
 ; PAUSA_AFTER
 
 
